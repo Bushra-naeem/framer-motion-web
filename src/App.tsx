@@ -19,7 +19,7 @@ function App() {
     <SmoothScroll>
       <MovingCursor>
         <Header />
-        <Suspense fallback={<div className='flex items-center justify-center'>Loading...</div>}>
+        <Suspense fallback={<div className='h-screen flex items-center justify-center'>Loading...</div>}>
         <AnimatePresence mode='wait'>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
